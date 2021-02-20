@@ -19,6 +19,11 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+		</style>
     </head>
     <body>
         
@@ -37,11 +42,11 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="#">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#">Skills</a></li> 								
-								<li class="nav-item"><a class="nav-link" href="#">Experiences</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Credits</a></li>
+								<li class="nav-item active" ><a class="nav-link" href="#about" >About</a></li> 
+								<li class="nav-item" ><a class="nav-link" href="#skills" >Skills</a></li> 								
+								<li class="nav-item" ><a class="nav-link" href="#experiences">Experiences & Education</a></li>
+								<li class="nav-item" ><a class="nav-link" href="#projects">Projects</a></li>
+								<li class="nav-item" ><a class="nav-link" href="#credits">Credits</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -51,7 +56,7 @@
         <!--================Header Menu Area =================-->
         
         <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
+        <section class="home_banner_area" id="about">
            	<div class="container box_1620">
            		<div class="banner_inner d-flex align-items-center">
 					<div class="banner_content">
@@ -86,7 +91,7 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Welcome Area =================-->
-        <section class="welcome_area p_120">
+        <section class="welcome_area p_120" id="skills">
         	<div class="container">
 
 				<div class="row">
@@ -159,15 +164,15 @@
         <!--================End Welcome Area =================-->
         
         <!--================My Tabs Area =================-->
-        <section class="mytabs_area p_120">
+        <section class="mytabs_area p_120" id="experiences">
         	<div class="container">
         		<div class="tabs_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-size:20px;">My Experiences</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="font-size:20px;">My Education</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
@@ -258,7 +263,7 @@
         <!--================End My Tabs Area =================-->
         
         <!--================Feature Area =================-->
-        <section class="feature_area p_120">
+        <section class="feature_area p_120" id="projects">
         	<div class="container">
         		<div class="main_title">
         			<h2>Projects</h2>
@@ -311,7 +316,7 @@
         <!--================End Feature Area =================-->
         
         <!--================Footer Area =================-->
-        <footer class="footer_area" style="padding-top: 40px;padding-bottom: 40px;">
+        <footer class="footer_area" style="padding-top: 40px;padding-bottom: 40px;" id="credits">
         	<div class="container">
         		<div class="row footer_inner">
         			<div class="col-lg-5 col-sm-6">
@@ -362,5 +367,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+		<script src="vendors/panelsnap-1.3.0/src/panelsnap.js"></script>		
     </body>
 </html>
