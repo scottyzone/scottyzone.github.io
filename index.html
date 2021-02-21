@@ -23,6 +23,23 @@
 			html {
 				scroll-behavior: smooth;
 			}
+			.custom_d_flex{
+				text-align:left;
+				color: rgba(255, 255, 255, 0.75);
+				padding-left:5%;
+				padding-right:5%;
+			}
+
+			.custom_d_flex_educ{
+				text-align:left;
+				color: rgba(255, 255, 255, 0.75);
+				padding-left:20%;
+				padding-right:5%;
+			}
+
+			.skills_custom{
+				padding-top:20px;
+			}
 		</style>
     </head>
     <body>
@@ -102,7 +119,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-2">
+					<div class="col-lg-2 skills_custom">
 						<h4>Languages</h4>
         				<ul class="unordered-list">
 							<li>PHP</li>
@@ -112,7 +129,7 @@
 							<li>C++</li>
 						</ul>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-lg-2 skills_custom">
 						<h4>Front-end</h4>
 						<ul class="unordered-list">
 							<li>HTML/HTML5</li>
@@ -126,7 +143,7 @@
 							<li>Vue JS</li>
 						</ul>        					
 					</div>
-					<div class="col-lg-2">
+					<div class="col-lg-2 skills_custom">
 						<h4>Back-end</h4>
 						<ul class="unordered-list">
 							<li>Laravel</li>
@@ -135,7 +152,7 @@
 						</ul>
         					
 					</div>
-					<div class="col-lg-2">
+					<div class="col-lg-2 skills_custom">
 						<h4>Database</h4>
         				<ul class="unordered-list">
 							<li>PostgreSql</li>
@@ -143,14 +160,14 @@
 							<li>MSSql</li>
 						</ul>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-lg-2 skills_custom">
 						<h4>Charting</h4>
 						<ul class="unordered-list">
 							<li>HighCharts.js</li>
 							<li>Charts.js</li>
 						</ul>
 					</div>					
-					<div class="col-lg-2">
+					<div class="col-lg-2 skills_custom">
 						<h4>CMS</h4>
         				<ul class="unordered-list">
 							<li>Joomla</li>
@@ -167,7 +184,7 @@
         <section class="mytabs_area p_120" id="experiences">
         	<div class="container">
         		<div class="tabs_inner">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<ul class="nav nav-tabs" id="myTab" role="tablist" style="padding-right:6%;">
 						<li class="nav-item">
 							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-size:20px;">My Experiences</a>
 						</li>
@@ -177,83 +194,83 @@
 					</ul>
 					<div class="tab-content" id="myTabContent">
 						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-							<ul class="list">
+							<ul class="list" style="max-width:700px;">
 								<li>
 									<span></span>
-									<div class="media" style="width: 600px;">
-										<div class="d-flex">
+									<div class="row media">
+										<div class="col-md-6 col-6 custom_d_flex">
 											<p>June 1, 2017 to present</p>
 										</div>
-										<div class="media-body" style="margin-left:-20px;">
+										<div class="col-md-6 col-6 media-body" >
 											<h4>DSWD FO Caraga</h4>
 											<p>Web Developer <br />Butuan City</p>
 										</div>
 									</div>
-								</li>
+								</li>	
 								<li>
 									<span></span>
-									<div class="media" style="width: 600px;">
-										<div class="d-flex">
-											<p>Sept. 30, 2014 <br>to June 1, 2017</p>
+									<div class="row media">
+										<div class="col-md-6 col-6 custom_d_flex">
+											<p>Sept. 30, 2014 to June 1, 2017</p>
 										</div>
-										<div class="media-body" style="margin-left:40px;">
+										<div class="col-md-6 col-6 media-body" >
 											<h4>Cabadbaran City Police Station(PNP)</h4>
 											<p>Computer Programmer <br />Cabadbaran City, Agusan del Norte</p>
 										</div>
 									</div>
-								</li>
+								</li>	
 								<li>
-								<span></span>
-									<div class="media" style="width: 600px;">
-										<div class="d-flex">
-											<p>Oct. 1, 2013 <br>to March 31, 2014</p>
+									<span></span>
+									<div class="row media">
+										<div class="col-md-6 col-6 custom_d_flex">
+											<p>Oct. 1, 2013 to March 31, 2014</p>
 										</div>
-										<div class="media-body" style="margin-left:20px;">
+										<div class="col-md-6 col-6 media-body" >
 											<h4>Northern Mindanao Colleges</h4>
 											<p>Information Technology instructor <br />Cabadbaran City, Agusan del Norte</p>
 										</div>
 									</div>
-								</li>
+								</li>	
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-							<ul class="list">
+							<ul class="list" style="max-width:700px;">
 								<li>
 									<span></span>
-									<div class="media" style="margin-left:70px;width: 600px;">
-										<div class="d-flex">
-											<p>2009-2013</p>
+									<div class="row media">
+										<div class="col-md-6 col-6 custom_d_flex_educ">
+											<p>SY 2009-2013</p>
 										</div>
-										<div class="media-body">
+										<div class="col-md-6 col-6 media-body" >
 											<h4>Caraga State University - Cabadbaran Campus</h4>
 											<p>BS Informatioon Technology <br />Cabadbaran City, Agusan del Norte</p>
 										</div>
 									</div>
-								</li>
+								</li>	
 								<li>
 									<span></span>
-									<div class="media" style="margin-left:70px;width: 600px;">
-										<div class="d-flex">
-											<p>2005-2009</p>
+									<div class="row media">
+										<div class="col-md-6 col-6 custom_d_flex_educ">
+											<p>SY 2005-2009</p>
 										</div>
-										<div class="media-body">
+										<div class="col-md-6 col-6 media-body" >
 											<h4>Candelaria Institute</h4>
 											<p>Secondary <br />Cabadbaran City, Agusan del Norte</p>
 										</div>
 									</div>
-								</li>
+								</li>	
 								<li>
-								<span></span>
-									<div class="media" style="margin-left:70px;width: 600px;">
-										<div class="d-flex">
-											<p>1999-2005</p>
+									<span></span>
+									<div class="row media">
+										<div class="col-md-6 col-6 custom_d_flex_educ">
+											<p>SY 1999-2005</p>
 										</div>
-										<div class="media-body">
+										<div class="col-md-6 col-6 media-body" >
 											<h4>Calibunan Elementary School</h4>
 											<p>Primary <br />Cabadbaran City, Agusan del Norte</p>
 										</div>
 									</div>
-								</li>
+								</li>	
 							</ul>
 						</div>
 					</div>
