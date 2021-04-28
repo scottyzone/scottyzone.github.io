@@ -43,7 +43,21 @@
 			.tabs_inner .tab-content .tab-pane .list li .media .media-body h4 {				
 				margin-bottom: 0px;
 			}
+			.img_tile{
+				width: 80%;
+			}
+			.gallery_div{
+				width: 90%;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top: 20px;
+			}
+			.gallery_item{
+				margin-top:20px;
+			}
+
 		</style>
+		<link rel="stylesheet" href="js/lightgallery/dist/css/lightgallery.css">
     </head>
     <body>
         
@@ -88,12 +102,11 @@
 							</div>
 							<div class="media-body">
 								<div class="personal_text">
-									<h6>Hello Everybody, i am</h6>
-									<h3>Scott Owen</h3>
-									<h4>Web Developer</h4>
+									<h6>Hello, i am</h6>
+									<h3>Scott</h3>
+									<h4> a Web Developer</h4>
 									<p>Currently residing in Butuan City, developed web-based systems since 2013, providing services to private individuals/companies and government agencies with passion and utmost dedication. </p>
 									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 28th January, 1994</a></li>
 										<li><a href="#"><i class="lnr lnr-phone-handset"></i> +639 46 9151 992</a></li>
 										<li><a href="#"><i class="lnr lnr-envelope"></i> sowamadeo@gmail.com</a></li>
 										<li><a href="#"><i class="lnr lnr-home"></i> Butuan City</a></li>
@@ -263,31 +276,7 @@
 											<p>BS Information Technology <br />Cabadbaran City, Agusan del Norte</p>
 										</div>
 									</div>
-								</li>	
-								<li>
-									<span></span>
-									<div class="row media">
-										<div class="col-md-6 col-12 custom_d_flex_educ">
-											<p>SY 2005-2009</p>
-										</div>
-										<div class="col-md-6 col-12 media-body" >
-											<h4>Candelaria Institute</h4>
-											<p>Secondary <br />Cabadbaran City, Agusan del Norte</p>
-										</div>
-									</div>
-								</li>	
-								<li>
-									<span></span>
-									<div class="row media">
-										<div class="col-md-6 col-12 custom_d_flex_educ">
-											<p>SY 1999-2005</p>
-										</div>
-										<div class="col-md-6 col-12 media-body" >
-											<h4>Calibunan Elementary School</h4>
-											<p>Primary <br />Cabadbaran City, Agusan del Norte</p>
-										</div>
-									</div>
-								</li>	
+								</li>									
 							</ul>
 						</div>
 					</div>
@@ -309,7 +298,7 @@
 						<div class="feature_item">
         					<h4>DSWD FO CARAGA</h4>
 								<div class="row col-lg-12">
-									Pantawid Pamilya Staff Profiling System
+									<a href="javascript:void(0);" onclick="showScreenShots('profiling')">Pantawid Pamilya Staff Profiling System</a>
 								</div>
 								<div class="row col-lg-12">
 									RSO-TO-OT System
@@ -345,9 +334,53 @@
         				</div>
 					</div>
 				</div>
+
+				<!-- projects -->
+
+				<div class="row feature_item gallery_div" id="div_staff_profiling" style="padding-top: 20px; display: none;">
+					<div class="col-md-12">
+
+						<h4>Pantawid Pamilya Staff Profiling System</h4>
+
+						<div class="row" id="lightgallery_staffProfiling">
+							<a class="col-md-3 gallery_item" href="img/staff_profiling/dashboard.jpg">
+								<img class="img_tile" src="img/staff_profiling/dashboard.jpg" >
+							</a>
+							<a class="col-md-3 gallery_item" href="img/staff_profiling/profile_list.jpg">
+								<img class="img_tile" src="img/staff_profiling/profile_list.jpg" >
+							</a>
+							<a class="col-md-3 gallery_item" href="img/staff_profiling/block_accounts.jpg">
+								<img class="img_tile" src="img/staff_profiling/block_accounts.jpg" >
+							</a>
+							<a class="col-md-3 gallery_item" href="img/staff_profiling/fetch_pis.jpg">
+								<img class="img_tile" src="img/staff_profiling/fetch_pis.jpg" >
+							</a>
+							<a class="col-md-3 gallery_item" href="img/staff_profiling/profile.jpg">
+								<img class="img_tile" src="img/staff_profiling/profile.jpg" >
+							</a>
+							<a class="col-md-3 gallery_item" href="img/staff_profiling/upload_profiles.jpg">
+								<img class="img_tile" src="img/staff_profiling/upload_profiles.jpg" >
+							</a>
+							<a class="col-md-3 gallery_item" href="img/staff_profiling/uploaded_profiles_list.jpg">
+								<img class="img_tile" src="img/staff_profiling/uploaded_profiles_list.jpg" >
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				
+
+				<!-- END projects -->
+
         	</div>
         </section>
         <!--================End Feature Area =================-->
+
+
+		
+
+
         
         <!--================Footer Area =================-->
         <footer class="footer_area" style="padding-top: 40px;padding-bottom: 40px;" id="credits">
@@ -393,5 +426,25 @@
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>		
+		<script src="js/lightgallery/demo/js/lightgallery.min.js"></script>		
+		<script src="js/lightgallery/demo/js/lg-thumbnail.min.js"></script>		
+		<script src="js/lightgallery/demo/js/lg-fullscreen.min.js"></script>	
+		<script>
+
+			lightGallery(document.getElementById('lightgallery_staffProfiling'));
+
+			const showScreenShots = project => {
+				
+				switch(project){
+					case 'profiling':
+						$('#div_staff_profiling').show();
+					break;
+				}
+
+
+			};
+
+			
+		</script>	
     </body>
 </html>
